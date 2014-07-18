@@ -16,7 +16,7 @@ var getNum = function() {
 
 }; //getNum end
 
-var fizzBuzz = function(num) {
+var fizzBuzz = function() {
 			for (var i = 1; i < numValue + 1; i++) {
 			if (i % 3 === 0 && i % 5 === 0) {
 				document.getElementById('container').innerHTML = ("fizzbuzz")
