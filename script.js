@@ -2,15 +2,14 @@ window.onload = function() {
 
 var numValue = parseInt(prompt("Let's play FizzBuzz. \nEnter a number between 1 and 100"));
 
-// alert(typeof(numValue));
+alert(typeof(numValue));
 
 
 function getNum() {
 
-// numValue = parseInt(prompt("please enter a whole number between 1 and 100"));
 
 		if (isNaN(numValue)) {
-			getNum();
+			numValue = parseInt(prompt("please enter a whole number between 1 and 100"));
 		} else {
 			fizzBuzz();
 		};
