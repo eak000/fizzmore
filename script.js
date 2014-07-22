@@ -1,15 +1,17 @@
 window.onload = function() {
 
-var numValue = parseInt(prompt("Let's play FizzBuzz. \nEnter a number between 1 and 100"));
+var numValue = parseInt(prompt("Let's play FizzBuzz. \nEnter a number between 1 and 100"), 10);
 
-alert(typeof(numValue));
+
 
 
 function getNum() {
-
+		// alert(numValue);
+		alert("hi")
 
 		if (isNaN(numValue)) {
-			numValue = parseInt(prompt("please enter a whole number between 1 and 100"));
+			numValue = parseInt(prompt("please enter a whole number between 1 and 100"), 10);
+			getNum();
 		} else {
 			fizzBuzz();
 		};
@@ -19,6 +21,11 @@ function getNum() {
 // var test = 99;
 
 function fizzBuzz () {
+
+		// 	if (isNaN(numValue)) {
+		// 	numValue = parseInt(prompt("please enter a whole number between 1 and 100"), 10);
+		// 	fizzBuzz();
+		// }
 
 
 			for (var i = 1; i < numValue + 1; i++) {
@@ -62,6 +69,6 @@ function fizzBuzz () {
 
 
 }; //fizzBuzz end
-fizzBuzz();
+getNum();
 
 }; //onload end
